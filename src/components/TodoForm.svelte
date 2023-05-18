@@ -16,11 +16,11 @@
         <input type="text" bind:value={todo} name="todo" placeholder="Write your todo here"/>
     </div>
     <button type="submit">Submit</button>
+    
 </form>
 
 
 <style>
-    
     div {
         display: flex;
         flex-direction: column;
@@ -33,11 +33,12 @@
         color: white;
         padding: 5px 10px;
         margin-top: 5px;
+        margin-bottom: 15px;
         width: 100%;
         text-align: center;
         text-decoration: none;
         display: inline-block; 
-        font-size: small;
+        font-size:small;
     }
 
     button:hover {
@@ -53,8 +54,10 @@
     }
 
     label {
+        font-size: 24px;
         font-weight: bold;
         color: rgb(43, 43, 43);
+        margin: top15px;
     }
 
     form {

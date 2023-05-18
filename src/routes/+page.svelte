@@ -23,10 +23,13 @@
     </p>
     </section>
     <section>
-        <TodoForm/>
-        {#each $todos as todo}  <!-- $ in front of todos to access the data directly --> 
-            <Todo todo={todo} index={todo.id} />
-        {/each}
+        <article>
+            <TodoForm/>
+                {#each $todos as todo}  <!-- $ in front of todos to access the data directly --> 
+                    <Todo todo={todo} index={todo.id} />
+                {/each} 
+        </article>
+       
     </section>
    
 </main>
@@ -37,8 +40,49 @@
 
 <style>
 
-    header{
-        margin-bottom: 45px;
-    }
+header{
+    margin-bottom: 50px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
 
+
+}
+
+:root {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+p{
+    margin-bottom: 50px;
+
+}
+
+main {
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+article{
+    background-color: beige;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid gray;
+}
+
+footer {
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+}
 </style>
