@@ -7,16 +7,38 @@
 </script>
 
 <header> 
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    <h3>Exploring frameworks. Svelte Todo list</h3>
+
 </header>
 
 <main>
-    <h1>
+    <section>
+       <h1>
         My Todos
-    </h1>
-    <TodoForm/>
-    {#each $todos as todo}  <!-- $ in front of todos to access the data directly --> 
-        <Todo todo={todo} index={todo.id} />
-    {/each}
+    </h1> 
+    <p>
+        Difficult to remember all the must-haves? Make a Todo list. 
+        Upon completion of a task you can choose to either cross the todo off the list or 
+        to completely delete it from the list. 
+    </p>
+    </section>
+    <section>
+        <TodoForm/>
+        {#each $todos as todo}  <!-- $ in front of todos to access the data directly --> 
+            <Todo todo={todo} index={todo.id} />
+        {/each}
+    </section>
+   
 </main>
+
+<footer>
+    <p>Visit <a href="https://svelte.dev/">svelte.dev</a> to learn more!</p>
+</footer>
+
+<style>
+
+    header{
+        margin-bottom: 45px;
+    }
+
+</style>
