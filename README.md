@@ -46,3 +46,5 @@ You can preview the production build with `npm run preview`.
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
 
+## Next steps
+I would save the todos to localStorage or a database. Maybe I would also add an edit-button so one doesn't have to delete and wrewrite a todo if misspelled. Another feature could be the ability to move todos up and down in the list. 
