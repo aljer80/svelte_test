@@ -11,12 +11,18 @@
 </script>
 
 
-<form on:submit|preventDefault={handleSubmit}> <!-- The preventDefault modifier is used to prevent the default form submission behavior, which would cause the page to refresh.-->
+<!-- The preventDefault modifier is used to prevent the default form submission behavior, 
+which would cause the page to refresh. -->
+<form on:submit|preventDefault={handleSubmit}> <!-- prevents the page from refreshing-->
     <div>
         <label for="todo">Todo</label>
-        <input type="text" bind:value={todo} name="todo" placeholder="Write your todo here"/>
-        <!-- The <input> element is bound to the todo variable using the bind:value directive. 
-        This means that when the user types into the input field, the value of todo will be updated accordingly.-->
+        
+        <input type="text" 
+        bind:value={todo} 
+        name="todo" 
+        placeholder="Write your todo here"
+        /> <!-- The <input> element is bound to the todo variable using the bind:value directive. 
+                This means that when the user types into the input field, the value of todo will be updated accordingly.-->
     </div>
     <button type="submit">Submit</button>
 </form>
