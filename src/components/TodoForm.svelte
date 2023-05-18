@@ -1,22 +1,24 @@
 <script>
     import {addTodo} from '../stores/todoStore.js';
 
-    let todo = '';
+    let todo = '';  //declares the variable todo and initializes it as an empty string.
 
     const handleSubmit = () => {
         addTodo(todo);
         todo = '';
-        console.log("submitting");
-    }
+    } // this function is called when the form is submitted.
+
 </script>
 
-<form on:submit|preventDefault={handleSubmit}>
+
+<form on:submit|preventDefault={handleSubmit}> <!-- The preventDefault modifier is used to prevent the default form submission behavior, which would cause the page to refresh.-->
     <div>
         <label for="todo">Todo</label>
         <input type="text" bind:value={todo} name="todo" placeholder="Write your todo here"/>
+        <!-- The <input> element is bound to the todo variable using the bind:value directive. 
+        This means that when the user types into the input field, the value of todo will be updated accordingly.-->
     </div>
     <button type="submit">Submit</button>
-    
 </form>
 
 

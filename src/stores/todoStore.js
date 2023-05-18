@@ -1,8 +1,9 @@
-import { writable } from "svelte/store";
+import { writable } from "svelte/store"; //imports the `writable` function from the `svelte/store` module
 
-export const todos = writable([]);  //writable defines todos which we can access in different places 
+export const todos = writable([]);  //Defines a Svelte store named todos that stores an array of todo items which we can access in different places 
 
-//updating the array and adding the new value
+
+// Add a new todo item (updating the array and adding the new value)
 export const addTodo = (text) => {
     todos.update( (cur) => {
         const newTodos = [... cur, {text, completed:false, id:Date.now()}]; 
@@ -10,12 +11,12 @@ export const addTodo = (text) => {
     })
 }
 
-//handle deletion
+//Remove a todo item by ID
 export const deleteTodo = (id) => {
     todos.update(todos => todos.filter(todo => todo.id != id)); //implicit return, keeping the id:s if they don't match the id we're trying to delete
 }
 
-
+//Toggle the completion status of a todo item by ID
 export const toggleTodoCompleted = (id) => {
     todos.update(todos => {
         let index = -1;
@@ -32,3 +33,6 @@ export const toggleTodoCompleted = (id) => {
         return todos;
     })
 }
+
+/* Other components can import and use these functions to update the shared todos store and 
+trigger reactivity in components that depend on it */

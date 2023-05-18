@@ -1,10 +1,11 @@
 
 <script>
     import {deleteTodo, toggleTodoCompleted} from '../stores/todoStore.js';
-    export let todo;    //basically means we're accepting props in here 
+    export let todo;    //the component accepts a prop named todo from its parent component
 </script>
 
-
+<!-- the checkbox will be checked if todo.completed is true, and unchecked if it's false. 
+When the checkbox value changes toggleTodoCompleted is called (with todo.id as an argument) -->
 <li>
     <input
         name="completed"
@@ -12,10 +13,14 @@
         checked={todo.completed}
         on:change={() => toggleTodoCompleted(todo.id)}
     />
+
+    <!-- Span displays the todo.text  -->
+    <!-- The class attribute is set dynamically using string interpolation. If todo.completed is true, the class "selected" will be applied -->
     <span class={`${todo.completed ? 'selected' : '' }`}> {todo.text} </span>  
     <button type="button" on:click={() => deleteTodo(todo.id)}>Delete</button>
 </li>
 
+ <!--Contains CSS styles that apply to the component -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Kalam&family=Shadows+Into+Light&display=swap');
