@@ -1,6 +1,6 @@
 <script>
     import {addTodo} from '../stores/todoStore.js';
-    
+
     let todo = '';
 
     const handleSubmit = () => {
@@ -28,7 +28,7 @@
     }
 
     button {
-        background: rgb(170, 0, 0);
+        background: rgb(45, 130, 241);
         border: none;
         color: white;
         padding: 5px 10px;
@@ -41,7 +41,7 @@
     }
 
     button:hover {
-        background: rgb(129, 0, 0);
+        background: rgb(37, 103, 190);
         border: none;
         color: white;
         padding: 5px 10px;
