@@ -1,4 +1,11 @@
-# create-svelte
+## What the project does
+Creating a todo list using Svelte kit. 
+It's useful if you want to try Svelte. Creating this to do-list you get to try and experience what makes Svelte nice to work with. Svelte kit comes with Veet for its bundling, which makes it fast. Svelte kit also has built in routing. 
+## Next steps
+I would save the todos to localStorage or a database. Maybe I would also add an edit-button so one doesn't have to delete and wrewrite a todo if misspelled. Another feature could be the ability to move todos up and down in the list. 
+
+
+## create-svelte
 
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
@@ -11,7 +18,7 @@ cd my-app
 npm install
 npm run dev
 
-# create a new project in the current directory
+## create a new project in the current directory
 npm create svelte@latest
 
 
@@ -25,14 +32,14 @@ npm run dev
 npm run dev -- --open
 ```
 
-
 ## Files you need to create:
-Create a file for global css in the src folder: "app.css" (src\app.css)
+Create a file for global css in the src folder: "app.css" 
+    [src\app.css]
 Create a components folder i src and add the files "Todo.svelte" and "TodoForm.svelte" :
-    src\components\Todo.svelte
-    src\components\TodoForm.svelte
+    [src\components\Todo.svelte]
+    [src\components\TodoForm.svelte]
 Create a stores folder i src and add the file "todoStore.js":
-    src\stores\todoStore.js
+    [src\stores\todoStore.js]
     
 
 ## Building
@@ -45,6 +52,3 @@ You can preview the production build with `npm run preview`.
 
 > To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
 
-
-## Next steps
-I would save the todos to localStorage or a database. Maybe I would also add an edit-button so one doesn't have to delete and wrewrite a todo if misspelled. Another feature could be the ability to move todos up and down in the list. 
