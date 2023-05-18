@@ -34,7 +34,7 @@ npm run dev -- --open
 
 ## Files you need to create:
 Create a file for global css in the src folder:[app.css](src\app.css)
-Create a components folder i src and add the files [Todo.svelte](src\components\Todo.svelte) and [TodoForm.svelte](src\components\TodoForm.svelte)
+Create a components folder i src and add the files [Todo.svelte](C:\Users\jernb\OneDrive\Skrivbord\svelte_test\src\components\Todo.svelte) and [TodoForm.svelte](src\components\TodoForm.svelte)
 Create a stores folder i src and add the file [todoStore.js](src\stores\todoStore.js)
     
 
