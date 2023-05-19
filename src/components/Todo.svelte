@@ -34,7 +34,6 @@ When the checkbox value changes toggleTodoCompleted is called (with todo.id as a
     font-family: 'Shadows Into Light', cursive;
     font-family: 'Kalam', cursive;
     font-size: 18px;
-
 }
 
 
@@ -47,7 +46,6 @@ button {
         text-align: center;
         text-decoration: none;
         font-size: small;
-        
     }
 
     button:hover {

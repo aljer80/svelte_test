@@ -8,7 +8,6 @@
 
 <header> 
     <h3>Exploring frameworks. Svelte Todo list</h3>
-
 </header>
 
 <main>
@@ -17,9 +16,9 @@
         My Todos
     </h1> 
     <p>
-        Difficult to remember all the must-haves? Make a Todo list. 
-        Upon completion of a task you can choose to either cross the todo off the list or 
-        to completely delete it from the list. 
+        Difficult to remember all the must-haves? Make a Todo list. <br>
+        Upon completion of a task you can choose to either cross the todo off the list, <br> 
+        or to completely delete it from the list. 
     </p>
     </section>
     <section>
@@ -29,14 +28,13 @@
                     <Todo todo={todo} index={todo.id} />
                 {/each} 
         </article>
-       
     </section>
-   
+    <section>
+        <p class="link">Visit <a href="https://svelte.dev/">svelte.dev</a> to learn more about Svelte!</p>
+    </section>
 </main>
 
-<footer>
-    <p>Visit <a href="https://svelte.dev/">svelte.dev</a> to learn more!</p>
-</footer>
+
 
 <style>
 
@@ -46,8 +44,6 @@ header{
     align-content: center;
     align-items: center;
     justify-content: center;
-
-
 }
 
 :root {
@@ -56,7 +52,6 @@ header{
 
 p{
     margin-bottom: 50px;
-
 }
 
 main {
@@ -67,7 +62,6 @@ main {
     align-content: center;
     align-items: center;
     justify-content: center;
-
 }
 
 article{
@@ -76,13 +70,8 @@ article{
     border: 1px solid gray;
 }
 
-footer {
+.link {
     margin-top: 50px;
     margin-bottom: 0px;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-
 }
-</style>
+    </style>

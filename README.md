@@ -1,12 +1,18 @@
 ## What the project does
 Creating a todo list using Svelte kit. 
 It's useful if you want to try Svelte. Creating this to do-list you get to try and experience what makes Svelte nice to work with. Svelte kit comes with Veet for its bundling, which makes it fast. Svelte kit also has built in routing. 
+
+
+## How to use the app
+You can create a Todo list. Add a todo by typing it in the input field and clicking the submit button (or hit enter). The todo is added to a list. You can toggle the todo by checking/unchecking the box. Consequently,upon completion of a task you can choose to either cross the todo off the list, or to completely delete it from the list. You delete a todo by clicking the delete button. 
+
+
 ## Next steps
-I would save the todos to localStorage or a database. Maybe I would also add an edit-button so one doesn't have to delete and wrewrite a todo if misspelled. Another feature could be the ability to move todos up and down in the list. 
+I would save the todos to localStorage or a database and write logic that prevents you from submitting an empty to do-item to the list. 
+Maybe I would also add an edit-button so one doesn't have to delete and rewrite a todo if misspelled. Another feature could be the ability to move todos up and down in the list. 
 
 
 ## create-svelte
-
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
 ## Creating a project

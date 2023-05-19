@@ -39,7 +39,8 @@ which would cause the page to refresh. -->
         background: rgb(45, 130, 241);
         border: none;
         color: white;
-        padding: 5px 10px;
+        padding-top: 2.5px; 
+        padding-bottom: 2.5px; 
         margin-top: 5px;
         margin-bottom: 15px;
         width: 100%;
@@ -53,7 +54,8 @@ which would cause the page to refresh. -->
         background: rgb(37, 103, 190);
         border: none;
         color: white;
-        padding: 5px 10px;
+        padding-top: 2.5px; 
+        padding-bottom: 2.5px; 
         width: 100%;
         text-align: center;
         text-decoration: none;
